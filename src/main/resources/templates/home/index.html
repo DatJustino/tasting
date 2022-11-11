@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Spring Fun</title>
+    <style>
+        #wrapper {
+            height:150px;
+            width:400px;
+            border: 1px solid black;
+            padding: 4px;
+            margin: auto;
+        }
+        #left {
+            width: 190px;
+            height: 111px;
+            float: left;
+            padding: 1px;
+            border: 1px solid red;
+        }
+        #left form input {
+            margin-bottom: 4px;
+        }
+        #right {
+            width: 198px;
+            height: 111px;
+            float: left;
+            padding: 1px;
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+<body>
+<h1>This is my spring project</h1>
+<div id="wrapper">
+
+    <div id="left">
+        <form action="personData" method="post">
+            <input type="text" name="first_name" placeholder="First name">
+            <input type="text" name="last_name" placeholder="Last name">
+            <input type="text" name="age" placeholder="age">
+            <input type="submit" value="Send data">
+        </form>
+    </div>
+
+    <div id="right">
+        <input type="radio" name="Vehicle" checked>I am a bike<br>
+        <input type="radio" name="Vehicle">I am a car<br>
+        <input type="radio" name="Vehicle">I am a scooter<br>
+    </div>
+
+</div>
+</body>
+</html>
